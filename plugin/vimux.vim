@@ -81,9 +81,9 @@ function! VimuxCloseRunner()
 endfunction
 
 function! VimuxZoomRunner()
-  if exists("g:VimuxRunnerPaneIndex")
-    call system("tmux resize-pane -Z -t ".g:VimuxRunnerPaneIndex)
-    unlet g:VimuxRunnerPaneIndex
+  if exists("g:VimuxRunnerIndex")
+    call system("tmux resize-pane -Z -t ".g:VimuxRunnerIndex)
+    unlet g:VimuxRunnerIndex
   endif
 endfunction
 
